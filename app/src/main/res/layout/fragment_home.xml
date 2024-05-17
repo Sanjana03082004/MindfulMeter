@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:padding="16dp">
+
+        <!-- Title for social media app usage -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Usage"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp" />
+
+        <!-- Pie chart for visualizing app usage -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!-- RecyclerView for displaying usage statistics -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUsageStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Title for maximum utilizing apps -->
+        <TextView
+            android:id="@+id/tvMaxUtilizingAppsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum Utilizing Apps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- RecyclerView for displaying maximum utilizing apps -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMaxUtilizingApps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="378dp"
+            android:background="@color/white"
+            android:scaleType="fitStart"
+            android:src="@drawable/weeklychart" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="GOOD           AVERAGE            BAD"
+            android:textSize="23dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:scaleType="fitStart"
+            android:src="@drawable/zonesfinal" />
+
+
+    </LinearLayout>
+</ScrollView>

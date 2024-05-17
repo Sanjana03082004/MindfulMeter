@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="80dp"
+    tools:context=".QualityTimeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TODO: Update blank fragment layout -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="662dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/quality" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Maximum Limit"
+                android:textColor="@color/blue"
+                android:layout_marginTop="14dp"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Old Value: 30min"
+                android:textColor="@color/black"
+                android:layout_marginTop="14dp"
+                android:textSize="18dp"
+                />
+
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00 hr : 00 min"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="35dp"
+                android:id="@+id/idEdtMessage"
+                android:layout_toLeftOf="@id/idFABSend"
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Changes"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="14dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
